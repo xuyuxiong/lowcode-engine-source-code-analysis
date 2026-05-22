@@ -56,7 +56,7 @@ npm run docs:build
 然后将 `.vitepress/dist` 目录的内容部署到 GitHub Pages。
 
 ## 访问地址
-- 开发环境: http://localhost:5173
+- 开发环境: `http://localhost:5173` (本地开发时使用)
 - 生产环境: https://[your-username].github.io/lowcode-engine-source-code-analysis/
 
 ### 预览
