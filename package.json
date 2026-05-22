@@ -1,0 +1,26 @@
+{
+  "name": "lowcode-engine-source-code-analysis",
+  "version": "1.0.0",
+  "description": "Lowcode Engine源码深度解析文档",
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "keywords": [
+    "lowcode",
+    "low-code",
+    "engine",
+    "source-code",
+    "analysis",
+    "documentation",
+    "vitepress"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "vitepress": "^1.6.3",
+    "markdown-it-block-image": "^0.0.3"
+  }
+}
