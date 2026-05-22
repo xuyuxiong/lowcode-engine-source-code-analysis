@@ -1,56 +1,63 @@
 # Lowcode Engine 源码深度解析
 
-> 深入理解阿里巴巴低代码引擎架构与设计原理
+深入解析阿里低代码引擎 Lowcode Engine 的架构设计与实现原理。
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![VitePress](https://img.shields.io/badge/VitePress-1.x-green.svg)](https://vitepress.dev/)
-[![Lowcode Engine](https://img.shields.io/badge/Lowcode%20Engine-1.3.2-orange.svg)](https://github.com/alibaba/lowcode-engine)
-
-## 📖 项目简介
-
-本项目是对阿里巴巴开源的 [Lowcode Engine](https://github.com/alibaba/lowcode-engine) 进行源码深度解析的文档站点。通过分析源码结构、核心模块实现和架构设计，帮助开发者深入理解低代码引擎的技术原理。
-
-## 🎯 适合人群
-
-- 🔍 **源码阅读者** - 希望深入理解 Lowcode Engine 源码
-- 🏗️ **架构师** - 学习大型前端项目的架构设计
-- 🔧 **开发者** - 进行二次开发和自定义扩展
-- 📚 **学习者** - 学习低代码技术体系
-
-## 📚 文档结构
+## 项目结构
 
 ```
-指南篇 → 架构篇 → 核心篇 → 进阶篇
+lowcode-engine-source-code-analysis/
+├── guide/           # 使用指南
+├── architecture/    # 架构设计
+├── core/           # 核心模块
+├── advanced/       # 进阶实践
+└── index.md        # 首页
 ```
 
-| 篇章 | 文档数 | 内容 |
-|------|--------|------|
-| 💡 指南篇 | 4 篇 | 概览、快速开始、源码结构、调试指南 |
-| 🏗️ 架构篇 | 4 篇 | 整体架构、Monorepo、编辑器核心、渲染器架构 |
-| ⚙️ 核心篇 | 10 篇 | 引擎核心、设计器、骨架层、工作区、插件系统等 |
-| 🚀 进阶篇 | 5 篇 | 自定义插件、自定义渲染器、物料开发、最佳实践、FAQ |
-
-## 🚀 快速开始
-
-### 安装依赖
+## 本地开发
 
 ```bash
+# 安装依赖
 npm install
-```
 
-### 本地开发
-
-```bash
+# 启动开发服务器
 npm run docs:dev
+
+# 构建文档
+npm run docs:build
 ```
 
-访问 `http://localhost:5173` 查看文档站点。
+## GitHub Pages 部署
 
-### 构建
+本项目已配置 GitHub Actions 自动部署到 GitHub Pages。
 
+### 自动部署触发条件
+- 推送代码到 `main` 或 `master` 分支
+- 手动触发（在 Actions 页面点击 "Run workflow"）
+
+### 部署步骤
+
+1. **启用 GitHub Pages**
+   - 进入仓库 Settings → Pages
+   - Source 选择 "GitHub Actions"
+
+2. **首次部署**
+   - 推送任意更改到主分支即可触发部署
+   - 部署完成后访问 `https://[your-username].github.io/lowcode-engine-source-code-analysis/`
+
+3. **查看部署状态**
+   - 在仓库的 Actions 标签页查看部署进度
+   - 绿色对勾表示部署成功
+
+### 手动部署
+如果需要手动部署，可以：
 ```bash
 npm run docs:build
 ```
+然后将 `.vitepress/dist` 目录的内容部署到 GitHub Pages。
+
+## 访问地址
+- 开发环境: http://localhost:5173
+- 生产环境: https://[your-username].github.io/lowcode-engine-source-code-analysis/
 
 ### 预览
 
