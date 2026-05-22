@@ -115,7 +115,7 @@ lowcode-engine-source-code-analysis/
 
 ## 📝 许可证
 
-本项目基于 [MIT 协议](LICENSE) 发布。
+本项目基于 MIT 协议发布。
 
 ## 🤝 参与贡献
 
